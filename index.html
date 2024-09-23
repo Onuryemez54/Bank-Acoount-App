@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Bank Account</title>
+</head>
+<body>      
+    <div class="container">
+        <h1>Bank Account</h1>
+        <div class="btn-container">
+            <form  id="deposit-form">
+                <input id="deposit" type="number">
+                <button type="submit" id="btn-deposit" class="btn">Deposit</button>
+            </form>
+            <form  id="withdraw-form">
+                <input id="withdraw" type="number">
+                <button type="submit" id="btn-withdraw" class="btn">withdraw</button>
+            </form>
+            <button class="btn history">Check Balance History</button>
+        </div>
+        <div class="balance">
+            <h1>Current Balance :</h1>
+            <h2 id="balance"></h2>
+        </div>
+        <div class="history-container"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
