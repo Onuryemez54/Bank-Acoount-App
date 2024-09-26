@@ -10,7 +10,7 @@
 <body>      
     <div class="container">
         <h1>Bank Account</h1>
-        <div class="btn-container">
+        <div class="form-container">
             <form  id="deposit-form">
                 <input id="deposit" type="number">
                 <button type="submit" id="btn-deposit" class="btn">Deposit</button>
@@ -21,9 +21,17 @@
             </form>
             <button class="btn history">Check Balance History</button>
         </div>
-        <div class="balance">
+        <div class="balance-container">
             <h1>Current Balance :</h1>
-            <h2 id="balance"></h2>
+            <div class="balance">
+                <h2 id="balance"></h2>
+                <select>
+                    <option value="TL">TL</option>
+                    <option value="EUR">EUR</option>
+                    <option value="USD">USD</option>
+                    <option value="SEK">SEK</option>
+                </select>
+            </div>
         </div>
         <div class="history-container"></div>
     </div>

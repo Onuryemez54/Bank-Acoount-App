@@ -82,9 +82,9 @@ function showHistory() {
       const listItem = document.createElement("li");
       listItem.textContent = `${key} : ${balanceItem[key]}`;
       lists.appendChild(listItem);
-      if (balanceItem[key] === "Withdraw") {
+      if (balanceItem[key] === "Deposit") {
         listItem.style.color = "#35ff0c";
-      } else if (balanceItem[key] === "Deposit") {
+      } else if (balanceItem[key] === "Withdraw") {
         listItem.style.color = "#c01a00";
       }
     }
